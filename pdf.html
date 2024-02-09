@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pdf.css">
+  <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PDF-files-download</title>
+  <style>
+    ::selection{
+         background-color: #3AC870;
+         color: white;
+    }
+</style>
+</head>
+<body>
+
+
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Info! Indicates a neutral informative change or action.
+
+  </div>
+
+
+
+  <header>
+    <h1><i class="fa-solid fa-file-pdf"></i> PDF Repository</h1>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="features.html"> <i class="fa-solid fa-feather"></i> Features</a>
+    <a href="class.html"><i class="fa-solid fa-chalkboard"></i> Coaching Timing</a>
+    <a href="#map"><i class="fa-solid fa-diamond-turn-right"></i> Get Direction</a>
+    <a href="gallery.html"><i class="fa-regular fa-image"></i> Gallery</a>
+    <div class="dropdown">
+      <button class="dropbtn">More
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#already-inPDF"><i class="fa-solid fa-file-pdf"></i> PDF Notes</a>
+        <a href="index.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="loader"></div>
+
+  <main>
+    <section class="subject">
+      <h2>Mathematics for class 8th</h2>
+      <ul class="file-list">
+        <li><a href="pdfs/math-topic1.pdf" download>Topic 1 PDF</a></li>
+        <li><a href="pdfs/math-topic2.pdf" download>Topic 2 PDF</a></li>
+        <!-- Add more PDF links as needed -->
+      </ul>
+    </section>
+    <section class="subject">
+      <h2>Science</h2>
+      <ul class="file-list">
+        <li><a href="pdfs/science-topic1.pdf" download>Topic 1 PDF</a></li>
+        <li><a href="pdfs/science-topic2.pdf" download>Topic 2 PDF</a></li>
+        <!-- Add more PDF links as needed -->
+      </ul>
+    </section>
+    <!-- Add more subject sections as needed -->
+  </main>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="darkmode.css">
+    <style>
+        ::selection{
+             background-color: #3AC870;
+             color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="features.html"> <i class="fa-solid fa-feather"></i> Features</a>
+        <a href="class.html"><i class="fa-solid fa-chalkboard"></i> Coaching Timing</a>
+        <a href="#map"><i class="fa-solid fa-diamond-turn-right"></i> Get Direction</a>
+        <a href="#gallery"><i class="fa-regular fa-image"></i> Gallery</a>
+        <div class="dropdown">
+          <button class="dropbtn">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="pdf.html"><i class="fa-solid fa-file-pdf"></i> PDF Notes</a>
+            <a href="index.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="darkmode">
+        <h1 onclick="myFunction()"><i class="fa-solid fa-sun"></i> Dark Mode</h1>
+      </div>
+      
+
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+    </script>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="road2.jpg" alt="Road-on-the-way" >
+                <p>Road made by Nature</p>
+            </div>
+            <div class="column">
+                <img src="road.jpg" alt="Ring road in varanasi" >
+                <p>Ring road in varanasi</p>
+            </div>
+            <div class="column">
+                <img src="river.jpg" alt="Varuna River in varanasi" >
+                <p>Varuna River in Varanasi</p>
+            </div>
+
+            <div class="column">
+                <img src="road2.jpg" alt="Road-on-the-way" >
+                <p>Road made by Nature</p>
+            </div>
+            <div class="column">
+                <img src="road.jpg" alt="Ring road in varanasi" >
+                <p>Ring road in varanasi</p>
+            </div>
+            <div class="column">
+                <img src="river.jpg" alt="Varuna River in varanasi" >
+                <p>Varuna River in Varanasi</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
