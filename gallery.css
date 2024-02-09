@@ -7,6 +7,7 @@ header h1{
     text-align: center;
     font-size: 35px;
 }
+
 .column{
     float: left;
     width: 95%;
@@ -23,7 +24,7 @@ header h1{
     height: auto;
     margin-left: auto;
     margin-right:auto;
-    border: 10px solid cornflowerblue;
+    border: 3px solid cornflowerblue;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
