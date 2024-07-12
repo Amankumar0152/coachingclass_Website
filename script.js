@@ -1,12 +1,26 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const popupOverlay = document.getElementById("popupOverlay");
-    const closeBtn = document.getElementById("closeBtn");
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('popup');
+    const closeButton = document.getElementById('close-popup');
+    const readMoreButton = document.getElementById('read-more');
 
-    // Show the popup when the page loads
-    popupOverlay.style.display = "flex";
+    function showPopup() {
+        if (!localStorage.getItem('popupShown')) {
+            popup.style.display = 'block';
+            localStorage.setItem('popupShown', 'true');
+        } else {
+            popup.classList.add('corner-popup');
+            popup.style.display = 'block';
+        }
+    }
 
-    // Close the popup when close button is clicked
-    closeBtn.addEventListener("click", function() {
-        popupOverlay.style.display = "none";
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+
+    closeButton.addEventListener('click', closePopup);
+    readMoreButton.addEventListener('click', () => {
+        window.location.href = 'your-read-more-link.html';
     });
+
+    showPopup();
 });
