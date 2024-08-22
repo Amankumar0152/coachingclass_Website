@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chandan-maurya-official-website</title>
+    <title>Chandan Classes Official Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="pop-up.html">
+    <link rel="stylesheet" href="pop-up.css">
     <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
     <style>
         ::selection{
@@ -26,11 +27,21 @@
     </style>
 </head>
 <body>
-    
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="river.jpg" alt="Popup Image" class="popup-image">
+            <h2>Popup Title</h2>
+            <p>Read more about this topic.</p>
+            <button id="read-more">Read More</button>
+            <button id="close-popup" class="close-button">X</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
+
     <header>
-        <h1><i class="fa-solid fa-chalkboard-user"></i> Chandan classes</h1>
+        <h1><i class="fa-solid fa-chalkboard-user"></i> Chandan classes.<span class="online">Online</span></h1>
     </header>
     <div class="navbar">
         <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
